@@ -1,0 +1,11 @@
+<div class="card-columns">
+
+    <div *ngFor="let detalle of productosDetalle" class="card">
+        <img [src]="detalle.snapshot.url" class="card-img-top" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">
+                {{detalle.plain_text}}
+            </h5>
+
+        </div>
+    </div>

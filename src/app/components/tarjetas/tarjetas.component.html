@@ -1,0 +1,19 @@
+<div class="card-columns">
+
+    <div (click)="verProducto(item)" *ngFor="let item of items" class="card puntero">
+        <img [src]="item.thumbnail" class="card-img-top" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">
+                {{item.title}}
+            </h5>
+            <p class="card-text">
+                <span class="badge badge-primary">{{item.price}}</span>
+            </p>
+            <p class="card-text">
+                {{item.address.city_name}}, {{item.address.state_name}}
+            </p>
+            <p class="card-text">
+                {{item.address.state_name}}
+            </p>
+        </div>
+    </div>
